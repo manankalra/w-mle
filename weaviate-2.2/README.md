@@ -15,10 +15,12 @@
     - It includes explanations, comments, decisions, interactive visualizations, and results. 
   
 - <h4>Dataset</h4>
-https://www.kaggle.com/datasets/arshkon/linkedin-job-postings
+
+  - https://www.kaggle.com/datasets/arshkon/linkedin-job-postings
   
 - <h4>Description</h4>
-The following pipeline allows you to ask exploratory questions related to thousands of job postings that were advertised on LinkedIn in the past two years and returns a succinct response in relation to the same.
+
+  - The following pipeline allows you to ask exploratory questions related to thousands of job postings that were advertised on LinkedIn in the past two years and returns a succinct response in relation to the same.
 
 - <h4>How it works?</h4>
 
