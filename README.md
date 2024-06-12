@@ -4,7 +4,7 @@
 
 `manankalra29@gmail.com` - `https://linkedin.com/in/manankalra`
 
-<h1>2.1 </h1>
+<h1>1 and 2.1</h1>
 
 to-be-added by 14/06
 
