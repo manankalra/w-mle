@@ -1,8 +1,10 @@
-%md
+`Manan Kalra`
 
-`Manan Kalra` - `Machine Learning Engineer, Genesys`
+`Machine Learning Engineer, Genesys - Galway, Ireland`
 
-`manankalra29@gmail.com` - `https://linkedin.com/in/manankalra`
+`manankalra29@gmail.com`
+
+`https://linkedin.com/in/manankalra`
 
 <h1>1 and 2.1</h1>
 
