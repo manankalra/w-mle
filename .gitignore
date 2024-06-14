@@ -167,3 +167,4 @@ cython_debug/
 .idea/vcs.xml
 .idea/w-mle.iml
 .idea/workspace.xml
+/weaviate_1/venv-w-mle/

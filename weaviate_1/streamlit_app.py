@@ -1,9 +1,7 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 
 from ui import generate
 from utils.client import access_client
-from utils.query import query_arxiv
 
 st.set_page_config(
     page_title="arXiv meets Weaviate - Manan Kalra",
@@ -12,57 +10,49 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-
-
-
-ui = {
-    # "README": (readme, "house-fill"),
-    "Generate": (generate, "search"),
-}
-
-
+ui = {"Generate": (generate, "search")}
 
 main_page = st.container()
-
 navigation = st.sidebar.container()
 
 with navigation:
-    selected_page = option_menu(
-        menu_title=None,
-        options=list(ui.keys()),
-        icons=[icon[1] for icon in ui.values()],
-        menu_icon="cast",
-        default_index=0,
-        styles={
-            "container": {"border": "2px solid #847242"},
-            "icon": {"font-size": "18px"},
-            "nav-link": {"font-size": "20px", "text-align": "left"},
-        },
-    )
+    with st.expander("About Arxiv meets Weaviate:"):
+        st.markdown((
+            """
+            This app allows you to ask questions based on retrieved content from an embedded index of more than half 
+            a million Arxiv papers. 
+
+            Particularly, you'll be able to:
+            - Provide a search keyword to shortlist the papers based on semantic search.
+            - Ask any kind of questions based on the retrieved content.
+            - Generate a response.
+            """
+        ))
+
+    with st.expander("How it's built:"):
+        st.markdown((
+            """
+            - The queries are performed on top of ingested vector embeddings in Weaviate Cloud.
+            - The index is multi-tenant and also uses quantized vector spaces for improving scalability and latency,
+            respectively.
+            - HNSW-based index is built along with named vectors were used for certain fields.
+            - Cohere's multi-lingual embedding model is used for populating the index with embeddgins whereas Claude's
+            Sonnet serves as the generative model for thi task.  
+            """
+        ))
+
+    with st.expander("Portfolio:"):
+        st.markdown(("""
+        - [LinkedIn]()
+        - My portfolio / Product work:
+            - [AI Copilots](https://www.genesys.com/en-gb/capabilities/agent-copilot)
+            - [RAG](https://www.genesys.com/capabilities/knowledge-management)
+            - [Bots](https://www.genesys.com/capabilities/voicebots)
+            - [Predictive Routing](https://www.genesys.com/capabilities/automated-routing)
+            - [Personalization/Recommendation Systems](https://www.genesys.com/capabilities/predictive-web-engagement)
+        - [Weaviate](https://github.com/manankalra/w-mle)
+        """))
 
 client = access_client()
-ui[selected_page][0].show(client, main_page)
+generate.show(client, main_page)
 client.close()
-
-
-# st.image('img/arxiv.png')
-# st.text("meets")
-# st.image('img/weaviate.png')
-#
-# st.title('ARXIV')
-
-# client = access_client()
-
-# with st.form('ARXIV_FORM'):
-#     collection_name = st.text_area('Name of an already existing collections in WCS.')
-#     query = st.text_area('Query')
-#     # query_properties = st.text_area("Query Properties")
-#     prompt = st.text_area('Prompt')
-#     limit = st.text_area('Limit')
-#
-#     submitted = st.form_submit_button('Submit')
-#
-#     if submitted:
-#         st.info(query_arxiv(client, collection_name, query, prompt, limit))
-#
-#     client.close()

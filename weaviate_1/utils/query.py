@@ -1,7 +1,4 @@
-import streamlit as st
-
-
-def query_arxiv(client, collection_name: str, query: str, query_properties: list, prompt: str = None, limit: int = 50) -> str:
+def query_arxiv(client, collection_name: str, query: str, query_properties: list=None, prompt: str = None, limit: int = 50) -> str:
     """
     Performs either hybrid or generative search based on user request.
 
@@ -53,4 +50,4 @@ def query_arxiv(client, collection_name: str, query: str, query_properties: list
             alpha=0.75,
         )
 
-    return response.generated
+    return response

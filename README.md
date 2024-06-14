@@ -6,9 +6,11 @@
 
 `https://linkedin.com/in/manankalra`
 
-<h1>1 and 2.1</h1>
+<h1>1 / 2.1 Arxiv meets Weaviate</h1>
 
-to-be-added by 14/06
+Query: ![img](weaviate_1/img/arxivweaviate.png)
+
+Generate: ![img](weaviate_1/img/arxivweaviate2.png)
 
 <h1>2.2 LinkedIn Job Postings</h1>
 
