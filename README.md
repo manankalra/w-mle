@@ -4,7 +4,13 @@
 
 `manankalra29@gmail.com`
 
-`https://linkedin.com/in/manankalra`
+`Other professional portfolio:`
+- [LinkedIn](https://ie.linkedin.com/in/manankalra)
+- [AI Copilots](https://www.genesys.com/en-gb/capabilities/agent-copilot)
+- [RAG](https://www.genesys.com/capabilities/knowledge-management)
+- [Bots](https://www.genesys.com/capabilities/voicebots)
+- [Predictive Routing](https://www.genesys.com/capabilities/automated-routing)
+- [Personalization / Recommendation Systems](https://www.genesys.com/capabilities/predictive-web-engagement)
 
 <h1>1 / 2.1 Arxiv meets Weaviate</h1>
 

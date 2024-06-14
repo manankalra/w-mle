@@ -43,7 +43,7 @@ with navigation:
 
     with st.expander("Portfolio:"):
         st.markdown(("""
-        - [LinkedIn]()
+        - [LinkedIn](https://ie.linkedin.com/in/manankalra)
         - My portfolio / Product work:
             - [AI Copilots](https://www.genesys.com/en-gb/capabilities/agent-copilot)
             - [RAG](https://www.genesys.com/capabilities/knowledge-management)
