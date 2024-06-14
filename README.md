@@ -14,7 +14,9 @@ Generate: ![img](weaviate_1/img/arxivweaviate2.png)
 
 WCS Cluster: ![img](weaviate_1/img/wcs.png)
 
-WCS Collections: ![img](weaviate_1/img/wcs2.png)
+WCS Collections: 
+
+![img](weaviate_1/img/wcs2.png)
 
 **How to run**: 
 ```commandline
