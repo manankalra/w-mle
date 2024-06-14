@@ -8,6 +8,8 @@
 
 <h1>1 / 2.1 Arxiv meets Weaviate</h1>
 
+**Dataset used**: [Cornell-University/arxiv](https://www.kaggle.com/datasets/Cornell-University/arxiv)
+
 Query: ![img](weaviate_1/img/arxivweaviate.png)
 
 Generate: ![img](weaviate_1/img/arxivweaviate2.png)
