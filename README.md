@@ -12,6 +12,37 @@ Query: ![img](weaviate_1/img/arxivweaviate.png)
 
 Generate: ![img](weaviate_1/img/arxivweaviate2.png)
 
+WCS Cluster: ![img](weaviate_1/img/wcs.png)
+
+WCS Collections: ![img](weaviate_1/img/wcs2.png)
+
+**How to run**: 
+```commandline
+clone the repo:
+---
+> git clone https://github.com/manankalra/w-mle
+
+cretae a virtualenv and install requirements:
+---
+> cd weaviate_1
+> python3.12 -m venv venv-w-mle
+> source venv-w-mle/bin/activate
+> pip3 install -r requirements.txt
+
+create .env
+---
+populate .env with:
+- WCS_URL
+- WEAVIATE_API_KEY
+- AWS_ACCESS_KEY
+- AWS_SECRET_KEY
+- AWS_SESSION_TOKEN
+
+run streamlit app
+---
+> streamlit run streamlit_app.py
+```
+
 <h1>2.2 LinkedIn Job Postings</h1>
 
 - <h4>Instructions</h4>
