@@ -1,0 +1,7 @@
+streamlit
+streamlit-option-menu
+langchain
+langchain_community
+weaviate-client
+pyspark
+python-dotenv
